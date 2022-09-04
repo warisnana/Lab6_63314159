@@ -12,8 +12,18 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 require('./routes')(app)
 
+//โช
 app.get('/status', function(req, res) {
-    res.send('โชเสตตัส')
+    res.send('โชเสตตัสทั้งหมด')
+})
+//เก็บ
+app.post('/status/user',function(req,res){
+    res.send('เก็บข้อมูผู้ใช้เข้าเสตตัส')
+})
+
+//ลบ
+app.delete('/status/user',function(req,res){
+    res.send("ลบข้อมูลผู้ใช้ในเสตตัส")
 })
 
 
