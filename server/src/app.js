@@ -21,7 +21,7 @@ app.post('/status/user',function(req,res){
     res.send('เก็บข้อมูผู้ใช้เข้าเสตตัส')
 })
 
-//ลบ
+//ลบข้อมูล
 app.delete('/status/user',function(req,res){
     res.send("ลบข้อมูลผู้ใช้ในเสตตัส")
 })
