@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 require('./routes')(app)
 
 app.get('/status', function(req, res) {
-    res.send('')
+    res.send('โชเสตตัส')
 })
 
 
